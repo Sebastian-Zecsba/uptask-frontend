@@ -40,9 +40,9 @@ const TaskCard = ({ task, canEdit }: TaskCardProps) => {
     transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
     padding: "1.25rem",
     backgroundColor: "#FFF",
-    with: '300px',
+    width: '300px',
     display: 'flex',
-    borderWith: '1px',
+    borderWidth: '1px',
     borderColor: 'rgb(203 213 225 / var(--tw-border-opacity))'
   } : undefined
 
@@ -55,12 +55,12 @@ const TaskCard = ({ task, canEdit }: TaskCardProps) => {
         style={style}
         className="min-w-0 flex flex-col gap-y-4"
       >
-        <p
+        <span
           className="text-xl font-bold text-slate-600 text-left"
         >
           {task.name}
           <p className="text-slate-500">{task.description}</p>
-        </p>
+        </span>
       </div>
 
       <div className="flex shrink-0  gap-x-6">
